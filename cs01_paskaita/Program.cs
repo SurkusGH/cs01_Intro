@@ -7,8 +7,8 @@ namespace cs01_paskaita
         static void Main(string[] args)
         {
             #region Teorija
-            Console.WriteLine("cs01_paskaita");
-            Console.WriteLine($"4 + 5 = {4 + 5}");
+            //Console.WriteLine("cs01_paskaita");
+            //Console.WriteLine($"4 + 5 = {4 + 5}");
 
             //int age = 15;
             //string myName = "Vilmantas";
@@ -23,12 +23,12 @@ namespace cs01_paskaita
             //Console.WriteLine($"Mano vardas yra {myName} ir man yra {age} metų");
             #endregion
 
-            //Assignment1(); // <-- į šituos daikčiukus kolkas irgi dėmesio nekreipkite, mokoma bus truputėlį vėliau
-            //Assignment2();
+            //Assignment1(); // <-- į šituos daikčiukus kolkas irgi dėmesio nekreipkite, mokoma bus truputėlį vėliau;
+            //Assignment2(); //     bet jeigu trumai, tai aš čia atsikomentuodamas eilutę pasileidžiu tam tikrą funkciją
             //Assignment3();
             //Assignment4();
             //Assignment5();
-            Assignment6();
+            //Assignment6();
         }
 
         public static void Assignment1()           // <-- į šitą vietą kolkas nekreipkite dėmesio, 
@@ -141,21 +141,43 @@ namespace cs01_paskaita
             Console.WriteLine("Vartotojau įveskite skaičių");
             int num3 = int.Parse(Console.ReadLine());
             Console.WriteLine($"Skaičiaus {num3} daugybos lentelė");
-            for (int i = 1; i < 10; i++) // <-- Čia yra ciklo aprašymas, bet jeigu noride susipažinti dabar google'inkite.
+            for (int i = 1; i < 11; i++) // <-- Čia yra ciklo aprašymas, bet jeigu noride susipažinti dabar google'inkite.
             {
                 Console.WriteLine($"{num3} * {i} = {num3 * i}");
             }
-
+            // Va čia neblogai paaiškina "for", "for each" ir "while loop'ą": https://www.youtube.com/watch?v=fhW5pekSBaU, jeigu nekantrautumėte.
         }
 
         public static void Assignment7()
         {
+            // Parašyti programą, kuri prašo vartotojo įvesti 4 skaičius ir išveda jų vidurkį
 
+            // Čia toks pats uždavinys kaip ir nakstesni, tik skiriasi operatoriai ir lygitis
+            Console.WriteLine("Įveskite 4 skaičius, programa išves jų vidurkį");
+            double a = double.Parse(Console.ReadLine()); // <-- tik atkreipkite dėmesį, kad naudojame jau ne int, o double (arba galima float), nes int neturi decimal point
+            double b = double.Parse(Console.ReadLine()); //     ir atsakymas būtų apvalinamas, o double turi decimal point (yra tikslesnis mūsų atveju)
+            double c = double.Parse(Console.ReadLine());
+            double d = double.Parse(Console.ReadLine());
+            // rezultato išvestį galima apsirašyti labai paprastai:
+            Console.WriteLine((a+b+c+d)/4);
+            // arba gražiau su string interpoliacija:
+            Console.WriteLine($"({a} + {b} + {c} + {d}) / 4 = {(a + b + c + d) / 4}");
         }
 
         public static void Assignment8()
         {
+            // Parašyti programą, kuri prašo įvesti 3 skaičius(A, B, C)
+            // ir išveda(A + B) * C, bei A * C + B * C
 
+            // Šios užduoties sprendimo nebeaprašau, nes tokį netyčia aprašiau Assignment4
+            // bet parašysiu trumpiausiu įmanomu būdu
+            Console.WriteLine("Enter 3 numbers: ");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"(A + B) * C = {(a + b) * c}");
+            Console.WriteLine($"A * C + B * C = {a * c + b * c}");
         }
     }
 }

@@ -35,7 +35,7 @@ namespace cs01_paskaita
             // Programa visada turi atsakyti: mano irgi
 
             // Tai iš esmės užduotyje mus reikės vartotojo įvedamo 1 stringo, tai nuo to ir pradedame:
-            string color; // <-- inicijuojame kintamąjį
+            string color; // <-- inicijuojame string tipo kintamąjį
             // tuomet sakome konsole skaityk įvestį
             color = Console.ReadLine(); // <-- čia konsolė prie anksčiau inicijuoto kintamojo priskiria reikšmę, kurią įvesite konsolėje
             //tuomet nurodome, kad kompiuteris imtų mūsų stringo reikšmę ir spausdintų ją tarp kitų žodžių:

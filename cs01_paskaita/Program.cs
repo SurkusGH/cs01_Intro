@@ -29,6 +29,8 @@ namespace cs01_paskaita
             //Assignment4();
             //Assignment5();
             //Assignment6();
+            //Assignment7();
+            //Assignment8();
         }
 
         public static void Assignment1()           // <-- į šitą vietą kolkas nekreipkite dėmesio, 

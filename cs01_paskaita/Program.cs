@@ -21,12 +21,14 @@ namespace cs01_paskaita
             //Console.ForegroundColor = ConsoleColor.DarkRed; // <-- paspalvoju consolės tekstą
 
             //Console.WriteLine($"Mano vardas yra {myName} ir man yra {age} metų");
+            #endregion
 
             //Assignment1(); // <-- į šituos daikčiukus kolkas irgi dėmesio nekreipkite, mokoma bus truputėlį vėliau
             //Assignment2();
             //Assignment3();
             //Assignment4();
-            #endregion
+            //Assignment5();
+            Assignment6();
         }
 
         public static void Assignment1()           // <-- į šitą vietą kolkas nekreipkite dėmesio, 
@@ -104,6 +106,56 @@ namespace cs01_paskaita
             Console.WriteLine($"Lygtis su kintamaisiais yra {X} + {Y} * {Z}");
             // Ir tuomet kaip ankstesnėse užduotyse aprašome paduodame atsakymą:
             Console.WriteLine($"Atsakymas yra {X + Y * Z}");
+        }
+
+        public static void Assignment5()
+        {
+            // Parašyti programa kuri išveda dviejų vartotojo įvedamų skaičių
+            // sumą, skirtumą, sandaugą ir dalybą
+
+            Console.WriteLine("Vartotojau įvesk du skaitmenis");
+            Console.WriteLine("kurie bus sudėti, atimti, padauginti ir padalinti"); // <-- čia atskiros dvi eilutės atliekamas tik tam,
+                                                                                    //     kad consolė spausdintų kitoje eilutėje
+            int num1 = int.Parse(Console.ReadLine()); // <-- čia kaip matote, skirtingai nei anksčiau inicializuojami kintamieji kitaip
+            int num2 = int.Parse(Console.ReadLine()); //     t. y. vienoje eil. ir inicializuojami ir iškarto priskiriama reikšmę, kurią įves vartotojas
+
+            Console.WriteLine("Rezultatas sudėjus: ");
+            Console.WriteLine(num1 + num2);             // <-- Čia kaip matote matematinę operaciją galima daryti ir be interpoliacijos
+            Console.WriteLine("Rezultatas atėmus: ");   //     tiesiog "cw+tab+tab" ir vedate kintamųjų vardus (num1 num2) ir operatorių (+ - * /) tarp jų"
+            Console.WriteLine(num1 - num2);
+            Console.WriteLine("Rezultatas padauginus: ");
+            Console.WriteLine(num1 * num2);
+            Console.WriteLine("Rezultatas padalinus: ");
+            Console.WriteLine(num1 / num2);
+        }
+
+        public static void Assignment6()
+        {
+            // Parašyti programą, kuri prašo
+            // vartotojo skaičiaus įvesties ir išveda
+            // įvesto skaičiau daugybos lentelę
+
+            // šiaip, kaip antroje paskaitoje ir minėta, daugybos lentelei reikia ciklo,
+            // panaudojimo. Aprašau sprendimą, bet šitą dalyką dar tik dėstys
+
+            Console.WriteLine("Vartotojau įveskite skaičių");
+            int num3 = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Skaičiaus {num3} daugybos lentelė");
+            for (int i = 1; i < 10; i++) // <-- Čia yra ciklo aprašymas, bet jeigu noride susipažinti dabar google'inkite.
+            {
+                Console.WriteLine($"{num3} * {i} = {num3 * i}");
+            }
+
+        }
+
+        public static void Assignment7()
+        {
+
+        }
+
+        public static void Assignment8()
+        {
+
         }
     }
 }
